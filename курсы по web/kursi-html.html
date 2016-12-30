@@ -1,0 +1,308 @@
+<!--
+
+
+				<div class="pre">
+					<div class="code">
+						asdasdasdasddsads
+					</div>
+				</div>
+		
+		-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style/normalize.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<script src="js/js.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<title>Курсы по HTML</title>
+
+</head>
+<body>
+<header >
+<a name="top"></a>
+	<div class="header-menu">
+		<ul class="nav">
+			<li><a class="active-nav" href="kursi-html.html">Курсы по HTML</a></li>
+			<li><a href="kursi-css.html">Курсы по CSS</a></li>
+			<li><a href="kursi-js.html">Курсы по JavaScript</a></li>
+			<li><a href="kursi-php.html">Курсы по PHP</a></li>
+		</ul>		
+	</div>
+</header>
+	<main>
+		<div class="container-main">
+		<div class="left-menu">
+			<div class="left-menu-head">
+				Навигация по курсу
+			</div>
+			<ul>
+				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#azi">Азы HTML</a></li>
+				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#pt">Парные теги в HTML</a></li>
+				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#ot">Одиночные теги в HTML</a></li>
+				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#atrib">Атрибуты HTML-тегов </a></li>
+				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#zagolov">Заголовок в HTML</a></li>
+				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#strukt">Структура HTML документа</a></li>
+			</ul>
+		</div>
+		<div class="right-content">
+			<div class="content">
+			<a name="azi"></a>
+				<h1>Азы HTML </h1>
+				<div class="about-text">
+					<div class="text">
+					Для создания веб-страниц используются языки HTML и CSS. HTML отвечает за структуру и содержание страницы, CSS — за внешний вид.
+						Язык HTML состоит из тегов. Теги — это те самые кирпичики, из которых построена каждая веб-страница.
+					</div class="text">
+					<div class="text">
+						Каждый тег начинается с символа <div class="simv-about">&lt;</div> и заканчивается символом <div class="simv-about">&gt</div>, например: <div class="simv-about">&lt;</div>a<div class="simv-about">&gt</div> .
+					</div class="text">
+					<div class="text">
+						Все теги можно разделить на парные и одиночные. Каждый парный тег состоит из двух частей: открывающего тега и закрывающего. Внутри закрывающего тега используется символ <div class="simv-about">/</div>.
+					</div>
+					<a name="pt"></a>
+		<h3>Пример парного тега </h3>
+		<!--*********Code**********-->
+				<div class="pre">
+					<div class="code">
+						<div class="simv">&lt;div&gt</div> Это блочный элемент.. <div class="simv">&lt;/div&gt;</div>
+					</div>
+				</div>
+		<!--*********Code**********-->
+		<div class="text">
+			Как вы видите у тега <div class="simv-about">&lt;div&gt</div> есть пара в виде закрывающегося  тега <div class="simv-about">&lt;/div&gt;</div>
+		</div>
+				</div>
+		
+		<div class="about-text">
+				<h2>Список парных тегов в HTML 5</h2>
+		<div class="text">
+			В HTML5 существует очень много парных тегов, в этой статье мы познакомимся только с некоторыми из них, которые чаще всего встречаются:
+		</div>
+														<!--*********Code**********-->
+				<div class="pre">
+					<div class="code">
+						<div class="simv">&lt;a&gt</div> -Ссылка <div class="simv">&lt;/a&gt;</div><br><br>
+						<div class="simv">&lt;b&gt</div> -Жирный шрифт <div class="simv">&lt;/b&gt;</div><br><br>
+						<div class="simv">&lt;blockquote&gt</div> -Цитата <div class="simv">&lt;/blockquote&gt;</div><br><br>
+						<div class="simv">&lt;body&gt</div> -Тело документа HTML <div class="simv">&lt;/body&gt;</div><br><br>
+						<div class="simv">&lt;button&gt</div> -Кнопка <div class="simv">&lt;/button&gt;</div><br><br>
+						<div class="simv">&lt;div&gt</div> -Блочный элемент <div class="simv">&lt;/div&gt;</div><br><br>
+						<div class="simv">&lt;em&gt</div> -Курсивный шрифт <div class="simv">&lt;/em&gt;</div><br><br>
+						<div class="simv">&lt;form&gt</div> -Форма <div class="simv">&lt;/form&gt;</div><br><br>
+						<div class="simv">&lt;h*&gt</div> -Заголовки от h1 до h6 <div class="simv">&lt;/h*&gt;</div><br><br>
+						<div class="simv">&lt;head&gt</div> -Голова HTML документа <div class="simv">&lt;/head&gt;</div><br><br>
+						<div class="simv">&lt;header&gt</div> -Шапка сайта <div class="simv">&lt;/header&gt;</div><br><br>
+						<div class="simv">&lt;html&gt</div> -HTML документ <div class="simv">&lt;/html&gt;</div><br><br>
+						<div class="simv">&lt;li&gt</div> -Отдельный элемент списка <div class="simv">&lt;/li&gt;</div><br><br>
+						<div class="simv">&lt;main&gt</div> -Содержимое документа <div class="simv">&lt;/main&gt;</div><br><br>
+						<div class="simv">&lt;script&gt</div> -Скрипт <div class="simv">&lt;/script&gt;</div><br><br>
+						<div class="simv">&lt;section&gt</div> -Семантически единые разделы страницы, тег HTML5 <div class="simv">&lt;/section&gt;</div><br><br>
+						<div class="simv">&lt;ul&gt</div> -Маркированный список <div class="simv">&lt;/ul&gt;</div><br><br>
+						
+						
+
+						
+					</div>
+				</div>
+														<!--*********Code**********-->
+		
+			<div class="text">
+				Парные теги обычно нужны, чтобы оформить некоторый участок текста. Благодаря паре тегов вы можете указать начало и конец этого участка. Но ведь есть теги, которые не предназначены для оформления фрагментов текста.
+			</div>
+			
+			<div class="text">
+				Например, тег для вставки изображения или тег для вставки разделительной полосы. Такие теги добавляют на страницу одиночный объект, и им не нужно для этого заключать в себя какой-то текст. Поэтому их называют одиночными.
+				Примеры таких тегов:  <div class="simv-about">&lt;hr&gt</div>, <div class="simv-about">&lt;br&gt</div>, <div class="simv-about">&lt;img&gt</div>.
+			</div>
+			<div class="text">
+			<a name="ot"></a>
+				<h2>Список одиночных тегов в HTML 5 </h2>
+			</div>
+														<!--*********Code**********-->
+				<div class="pre">
+					<div class="code">
+						<div class="simv">&lt;br&gt</div> -Перенос строки <br><br>
+						<div class="simv">&lt;hr&gt</div> -Горизонтальная линия <br><br>
+						<div class="simv">&lt;img&gt</div> -Изображение (фотография, картинка, рисунок и т.д.) <br><br>
+						<div class="simv">&lt;input&gt</div> -Элемент формы, может быть кнопкой, текстовым полем, перключателем и др. <br><br>
+						<div class="simv">&lt;link&gt</div> -Загружает внешние файлы .css, .js и т.д.  <br><br>
+						<div class="simv">&lt;meta&gt</div> -Мета теги <br><br>
+						<div class="simv">&lt;source&gt</div> -Внедряет аудио/видео файлы, с помощью тегов audio и video <br><br>
+						<div class="simv">&lt;br&gt</div> -Перенос строки <br><br>						
+					</div>
+				</div>
+														<!--*********Code**********-->
+				<div class="text">
+					Это частоиспользуемые одиночные теги HTML 5.
+				</div>
+		</div>
+
+
+
+<!--***************************************************************************************************-->	
+		<div class="about-text">
+		<a name="atrib"></a>
+			<h2>Атрибуты HTML-тегов </h2>
+			<div class="text">
+				Теги могут иметь атрибуты. Некоторые теги есть смысл использовать только с атрибутами. Наиболее яркий пример — тег <div class="simv-about">&lt;img&gt</div>, обозначающий изображение. Для него обязательно нужно указывать атрибут src, который задаёт адрес картинки (иначе браузер не сможет загрузить её).
+			</div>
+			<div class="text">
+				В общем случае тег записывается следующим образом:
+			</div>
+														<!--*********Code**********-->
+				<div class="pre">
+					<div class="code">
+						<div class="simv">&lt;имя_тега атрибут1="значение1" атрибут2= "значение2"....&gt</div>  
+						
+					</div>
+				</div>
+														<!--*********Code**********-->
+
+			<div class="text">
+				Атрибутов может быть несколько:
+			</div>
+				<div class="pre">
+					<div class="code">
+						<div class="simv">&lt;p class="about"&gt</div> .... <div class="simv">&lt;/p&gt;</div><br><br>
+						<div class="simv">&lt;a class="new-page" href="ссылка на веб страницу"&gt</div> .... <div class="simv">&lt;/a&gt;</div><br><br>
+						<div class="simv">&lt;img class="image-car" src="ссылка на изображение"&gt</div> 
+					</div>
+				</div>
+		</div>
+
+<!--***************************************************************************************************-->	
+
+		<div class="about-text">
+		<a name="zagolov"></a>
+			<h2>Заголовок в HTML </h2>
+			<div class="text">
+				Заголовки выполняют важную функцию на веб-странице. Во-первых, они показывают важность раздела, к которому относятся. Чем больше заголовок и его «вес» , тем более он значимый. Вспомните, что в газетах и журналах передовицы набраны крупным шрифтом, тем самым, привлекая к ним внимание и говоря: «вот это надо читать обязательно» . Во-вторых, с помощью различных заголовков легко регулировать размер текста. Чем выше уровень заголовка, тем больше размер шрифта. Самым верхним уровнем является уровень 1 (<div class="simv">&lt;h1&gt</div>), а самым нижним — уровень 6 (<div class="simv">&lt;h6&gt</div>). И, в-третьих, поисковики добавляют рейтинг тексту, если он находится внутри тега заголовка. Это важно для раскрутки сайта и для его занятия первых строк выдачи результата в поисковой системе по ключевым словам.
+			</div>
+				<div class="pre">
+					<div class="code">
+						<div class="simv">&lt;h1&gt</div> Заголовок 1 уровня <div class="simv">&lt;/h1&gt;</div><br><br>
+						<div class="simv">&lt;h2&gt</div> Заголовок 2 уровня <div class="simv">&lt;/h2&gt;</div><br><br>
+						<div class="simv">&lt;h3&gt</div> Заголовок 3 уровня <div class="simv">&lt;/h3&gt;</div><br><br>
+						<div class="simv">&lt;h4&gt</div> Заголовок 4 уровня <div class="simv">&lt;/h4&gt;</div><br><br>
+						<div class="simv">&lt;h5&gt</div> Заголовок 5 уровня <div class="simv">&lt;/h5&gt;</div><br><br>
+						<div class="simv">&lt;h6&gt</div> Заголовок 6 уровня <div class="simv">&lt;/h6&gt;</div><br><br>						
+					</div>
+				</div>
+				<div class="text">
+					<h3>Вот как выглядят заголовки в браузере:</h3>
+					<div class="img-add">
+						<img src="img/h1-h6.png" alt="">
+					</div>
+				</div>
+		</div>
+
+<!--***************************************************************************************************-->	
+		<div class="about-text">
+			<h2>Структура HTML5 документа <a name="strukt"></a></h2>
+			<div class="text">
+				Начальная структура любого HTML5 документа одинакова. Ее записывают так:
+			</div>
+														<!--*********Code**********-->
+				<div class="pre">
+					<div class="code">
+						<div class="simv">&lt;DOCTYPE html&gt </div> <br><br>
+						<div class="simv">&lt;html&gt</div> <br><br>
+							<div class="simv">&lt;head&gt</div><br><br>
+							 <div class="simv">&lt;meta charset="UTF-8"&gt</div><br><br>
+							  <div class="simv">&lt;title&gt</div> ... <div class="simv">&lt;/title&gt;</div><br><br>
+							  <div class="simv">&lt;/head&gt;</div><br><br>
+							<div class="simv">&lt;body&gt</div> ... <div class="simv">&lt;/body&gt;</div><br><br>
+						 <div class="simv">&lt;/html&gt;</div>
+						
+					</div>
+				</div>
+														<!--*********Code**********-->
+
+				<div class="text">
+					<h3><div class="simv">&lt;DOCTYPE html&gt </div></h3>
+					<div class="simv">Doctype html</div> - предназначен для указания типа текущего документа — DTD (document type definition, описание типа документа). Это необходимо, чтобы браузер понимал, как следует интерпретировать текущую веб-страницу, поскольку HTML существует в нескольких версиях</div>
+					<div class="text">
+						
+					</div>				
+					<div class="text">
+						<h3><div class="simv">&lt;html&gt</div>...<div class="simv">&lt;/html&gt;</div></h3>
+						Следующий идет парный тег <div class="simv">&lt;html&gt</div><div class="simv">&lt;/html&gt;</div>.
+						В него входит все содержимое, которое находится в документе, кроме элемента <div class="simv">&lt;DOCTYPE html&gt</div> ;
+					</div>
+					
+
+					<div class="text">
+						<h3><div class="simv">&lt;head&gt</div>...<div class="simv">&lt;/head&gt;</div></h3>
+						Следующий идет парный тег <div class="simv">&lt;head&gt</div><div class="simv">&lt;/head&gt;</div>.
+						В него входят: Кодировка (<div class="simv">&lt;meta charset="UTF-8"&gt</div>), название веб-сайта (<div class="simv">&lt;title&gt</div> ... <div class="simv">&lt;/title&gt;</div>), а так же различные подключаемые файлы (<div class="simv">&lt;link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"&gt </div>)..
+					</div>
+
+
+					<div class="text">
+						<h3><div class="simv">&lt;body&gt</div> ... <div class="simv">&lt;/body&gt;</div></h3>
+						Следующий идет парный тег <div class="simv">&lt;body&gt</div><div class="simv">&lt;/body&gt;</div>. В него входят все элементы разметки веб-страницы, т.е те элементы, которые видны пользователям ( это теги и их содержимое ).
+					</div>
+
+
+					<div class="text">
+						
+					</div>
+			</div>
+			<div class="about-text">
+				<h3>Пример разметки простой HTML страницы:</h3>
+
+														<!--*********Code**********-->
+				<div class="pre">
+					<div class="code">
+						<div class="simv">&lt;DOCTYPE html&gt </div> <br><br>
+						<div class="simv">&lt;html&gt</div> <br><br>
+							<div class="simv">&lt;head&gt</div><br>
+							<div class="simv">&lt;link rel="stylesheet" href="css/style.css"&gt</div><br>
+							 <div class="simv">&lt;meta charset="UTF-8"&gt</div><br><br>
+							  <div class="simv">&lt;title&gt</div> Мой первый веб документ <div class="simv">&lt;/title&gt;</div><br><br>
+							  <div class="simv">&lt;/head&gt;</div><br><br>
+							<div class="simv">&lt;body&gt</div><br>
+								<div class="simv">&lt;p&gt</div> Это абзац <div class="simv">&lt;/p&gt;</div><br>
+								<div class="simv">&lt;h1&gt</div> Это заголовок 1 уровня <div class="simv">&lt;/h1&gt;</div><br>
+								<div class="simv">&lt;h2&gt</div> Это заголовок 2 уровня <div class="simv">&lt;/h2&gt;</div><br>
+								<div class="simv">&lt;h3&gt</div> Это заголовок 3 уровня <div class="simv">&lt;/h3&gt;</div><br>
+							<div class="simv">&lt;/body&gt;</div><br><br>
+						 <div class="simv">&lt;/html&gt;</div>
+						
+					</div>
+				</div>
+														<!--*********Code**********-->
+
+			<div class="text">
+			<div class="text">
+				<h4>Вот скриншот этой страницы в браузере:</h4>
+			</div>
+				<div class="img-add">
+					<img src="img/1.png" alt="">
+				</div>
+			</div>
+			</div>
+				
+
+
+			</div>
+		</div>
+		</div>
+		<a class="up" href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+	</main>
+<script type="text/javascript">
+(function($){
+   $(document).on('click', 'a[href^=#]', function () {
+        $('html, body').animate({ scrollTop:  $('a[name="'+this.hash.slice(1)+'"]').offset().top }, 2000 ); 
+        return false;
+    });
+})(jQuery);
+</script>
+
+
+</body>
+</html>
