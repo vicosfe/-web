@@ -224,9 +224,9 @@ main{
 	font-family: "OpenSansRegular";
 	color: #000;
 	margin-bottom: 90px;
-
-
-	
+}
+.about-text h2{
+	color: #b20600;
 }
 .text{
 	margin: 10px 0;
