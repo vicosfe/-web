@@ -28,7 +28,7 @@
 				Навигация по курсу
 			</div>
 			<ul>
-				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#azi">Азы HTML</a></li>
+				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#azi">Азы CSS</a></li>
 				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#pt">Парные теги в HTML</a></li>
 				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#ot">Одиночные теги в HTML</a></li>
 				<li><i class="fa fa-angle-right" aria-hidden="true"></i> <a class="nav-menu" href="#atrib">Атрибуты HTML-тегов </a></li>
@@ -38,7 +38,77 @@
 		</div>
 		<div class="right-content">
 			<div class="content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam assumenda excepturi nobis. Libero, quidem quod modi adipisci. Ut, aspernatur voluptatibus mollitia quas perspiciatis iusto, officiis voluptatem ullam neque totam voluptatum beatae dicta nemo id architecto autem nihil explicabo. Libero ullam iure quis, expedita impedit ea explicabo a. Dolores adipisci et quod cum aliquam voluptate rem facilis a reprehenderit, repudiandae quia in, ipsum debitis delectus consectetur illum aut eveniet architecto nesciunt deleniti non accusantium exercitationem quidem optio. Voluptatum debitis fugiat aut doloremque placeat quas voluptatibus cum. Sit nostrum aspernatur qui, alias odit at itaque quisquam minus deserunt consequatur provident ea odio, cupiditate et esse quis officiis est voluptatibus sint eius pariatur inventore. Iste deleniti, dolor cumque ipsum ad nesciunt quia dolores autem suscipit fugiat, odio libero et quisquam? Recusandae consequatur, facere enim quis culpa neque vitae voluptas ab laudantium veritatis eligendi aliquam, necessitatibus harum ipsa repellendus. Rerum in, iusto itaque cum harum veniam sapiente corrupti consequatur, eum perspiciatis alias! Vitae provident ullam voluptas fugiat, non incidunt a commodi natus. Aperiam dolores veritatis, consectetur voluptatem illum, error iusto quae dolor veniam dignissimos ex nulla amet aliquam, possimus tempore ea laboriosam quam officia cumque repellendus reprehenderit asperiores tempora quia modi velit. Tempora molestias ipsam nobis illo amet ut veniam, obcaecati consequatur officia quibusdam ipsum minima assumenda mollitia atque qui magnam repudiandae. Corporis at deleniti sunt eligendi quia nostrum aperiam ipsum sapiente, nesciunt placeat ullam aliquam ducimus. Magni, aliquid molestiae saepe hic iusto culpa nostrum impedit maxime tempore velit nihil quia pariatur, sed, voluptatem omnis nesciunt accusantium expedita animi accusamus vero deserunt voluptate. Ducimus quia soluta vel nostrum, ipsum inventore numquam amet tenetur, nobis animi, molestiae nisi aperiam. Provident distinctio corporis, suscipit ex fugiat at perspiciatis ea ipsum, eligendi maxime non quidem quaerat nostrum deserunt quod, obcaecati officia tempora itaque amet aliquam voluptatibus repellendus. Id officiis cumque eum, suscipit vero fugiat, est quis aspernatur. Provident expedita eveniet nisi quam veritatis, magnam itaque dolorum omnis blanditiis asperiores autem, consequuntur ut repudiandae alias ratione repellat magni corporis architecto fugit, rem nobis animi hic maxime placeat error. Sunt perspiciatis temporibus autem modi magnam incidunt quidem deserunt nemo ipsa optio, reprehenderit, nulla eius quibusdam aut dolore eveniet ratione praesentium laborum eum omnis odit cupiditate similique itaque reiciendis nam. Odit officiis nihil recusandae debitis, et atque tempore quo dignissimos impedit amet similique iste aut dolores eos quis repellat, vitae architecto natus dolor voluptatum. Nemo, nobis fugiat animi qui.
+			<div class="about-text">
+				<h1>Азы CSS</h1>
+				<div class="text">
+					CSS расшифровывается как «каскадные таблицы стилей». Этот язык отвечает за внешний вид HTML-страницы. Синтаксис языка достаточно прост: он состоит из селекторов и свойств.
+				</div>
+				<div class="text">
+					С помощью селекторов можно сказать браузеру какие именно элементы мы хотим оформить. Свойства описывают как именно мы хотим оформить эти элементы. То есть селекторы — это снайперский прицел, а свойства — это кисть, рубанок, скальпель и перфоратор.
+				</div>
+				<div class="text">
+					Весь CSS-код состоит из повторяющихся блоков следующего вида:
+					<div class="pre">
+						<div class="code">
+							селектор {<br>
+				 			свойство1: значение;<br>
+				 			свойство2: значение;<br>
+							}
+						</div>
+					</div>
+					Такой блок называется «CSS-правило». Каждое CSS-правило содержит хотя бы один селектор и свойство.
+				</div>
+				<h2>Селекторы</h2>
+				<div class="text">
+					<h3>Простейшие селекторы</h3>
+					Простейшие селекторы — это селекторы по именам тегов. С их помощью можно задать стили для всех абзацев на странице, для всех ссылок, заголовков первого уровня и так далее. Такие селекторы содержат имя тега без символов <div class="simv-about">&lt;</div> и <div class="simv-about">&gt</div>. Например:
+					<div class="pre">
+						<div class="code">
+							p { <br>
+							  /* стили для абзацев */ <br>
+							} <br><br>
+
+							h1 { <br>
+							  /* стили для заголовков */ <br>
+							}
+						</div>
+					</div>
+				</div>
+				<div class="text">
+					<h3>Продвинутые селекторы</h3>
+					К более сложным селекторам можно отнести селекторы с использованием классов и псевдоклассов.
+				</div>
+				<div class="text">
+					Класс позволяет объединять разные элементы в смысловые группы и применять к ним одинаковое оформление. Например, можно создать класс «элементы с ошибкой» и задать ему красный цвет текста. Затем можно добавлять этот класс к любому HTML-тегу: абзацу, заголовку, элементу списка и так далее.
+				</div>
+				<div class="text">
+					Класс тега можно задать с помощью атрибута <div class="simv">class</div>, который содержит имя класса (или имена классов через пробел). Пример:
+					<div class="pre">
+						<div class="code">
+							<div class="simv">&lt;p class="help"&gt</div> <div class="simv">&lt;/p&gt</div><br>
+
+							<div class="simv">&lt;p class="help error"&gt</div> <div class="simv">&lt;/p&gt</div>
+						</div>
+					</div>
+					В примере у первого абзаца задан класс <div class="simv">help</div>, у второго абзаца заданы классы <div class="simv">help</div> и <div class="simv">error</div>.
+				</div>
+				<div class="text">
+					Селектор с использованием класса задаётся так: .имя_класса. Например:
+					<div class="pre">
+						<div class="code">
+							.help { ... } <br>
+							.error { ... }
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
 
 			</div>
 		</div>
