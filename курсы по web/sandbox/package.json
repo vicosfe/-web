@@ -1,0 +1,37 @@
+{
+  "name": "McSandy",
+  "version": "0.2.1",
+  "author": "Paceaux <me@frankmtaylor.com>",
+  "description": "McSandy: the Offline HTML5 sandbox",
+  "Mcsandy": {
+    "src": {
+      "assets": "src/mcsandy.styl",
+      "html": "src/html/",
+      "js": "src/js"
+    },
+    "dist": {
+      "html": "dist/mcsandy.html"
+    },
+    "final": "mcsandy.html"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-replace": "^0.5.4",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^1.5.4",
+    "nib": "~1.0.1",
+    "stylus": "~0.37.0"
+  },
+  "main": "gulp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paceaux/McSandy--the-HTML5-offline-Sandbox.git"
+  },
+  "keywords": [
+    "cli",
+    "node",
+    "projects"
+  ],
+  "license": "BSD"
+}

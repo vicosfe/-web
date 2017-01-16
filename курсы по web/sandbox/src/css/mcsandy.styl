@@ -1,0 +1,383 @@
+keyColor = hsl(212, 72%, 61.8%)
+headingColor= keyColor
+activeHeadingColor = headingColor
+neutralDark = #545454
+neutralLight = #f5f5ff
+neutralLightest = #fefefe
+coolDark = darken(keyColor, 61.8%)
+coolDarker = darken(keyColor, 80%)
+coolDarkest = darken(desaturate(keyColor, 63%), 61.8%)
+coolLightest = lighten(keyColor, 90%)
+standardWarm = keyColor - 180deg
+inactiveWarm = lighten(standardWarm, 38.2%)  
+activeWarm = lighten(standardWarm, 61.8%)
+standardCool = darken(saturate(keyColor - 90deg, 15%), 40%)
+inactiveCool = lighten(standardCool, 61.8%)
+activeCool = lighten(standardCool, 32.8%)
+
+panelBorder = .125em solid coolDark;
+coolDarkestGradient = linear-gradient(to bottom, coolDarker 0%, coolDarkest 10%, coolDarker 99%, coolDarkest 100%)
+coolDarkestGradientInverse = linear-gradient(to bottom, coolDarker 0%, coolDarkest 50%, coolDarker 100%)
+coolDarkerGradient = linear-gradient(to bottom, coolDarker 0%, coolDark 50%, coolDarker 100%)
+coolDarkerGradientInverse = linear-gradient(to bottom, coolDark 0%, coolDarker 50%, coolDark 100%)
+
+
+smooth()
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; 
+smooth-out()
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+mcanimate(name)
+        animation-delay: .5s
+        animation-duration: 3.5s
+        animation-name: name
+        animation-iteration-count: 1
+        animation-direction: normal 
+@keyframes slideUp
+    0%
+        max-height:0
+    50% 
+        max-height: 7.5vh
+    100%
+        max-height: 0
+@keyframes slideDown
+    0%
+        max-height:7.5vh
+    50% 
+        max-height: 0
+    100%
+        max-height: 7.5vh
+@keyframes saved
+    0%
+        background: standardCool
+    50%
+        background: activeCool
+
+html, body, h1, h2, h3, h4, h5, h6, div, fieldset, form, input, header, footer, section, article, figure, iframe
+    padding:0;
+    margin: 0;
+
+fieldset
+    border: none;
+
+
+html
+    font-family: Helvetica, sans-serif;
+    font-size: calc(.5vw + 1rem);
+    line-height: 1.618
+
+body
+    color: coolDarker; 
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4, 
+h5, .h5, 
+h6, .h6{
+    color: neutralLightest; /* rgb(88, 155, 215);*/
+    font-weight: normal
+    letter-spacing: .1ex
+}
+h1, .h1{
+    font-size: 1.2em;
+    padding: 0 .618em
+}
+h2, .h2{
+    font-size: 1.1em;
+}
+dt, dd
+    display: inline-block
+    float: left
+    margin: .618em .618em .618em 0
+dt
+    clear:left
+dd::after
+    content: ' '
+    display:table
+    clear: both
+
+a, input, textarea, form,fieldset, button, label
+    smooth()    
+    &:hover, &:focus
+        outline: none;
+        smooth-out()    
+kbd
+    font-size: 1rem
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    border-right-color: #ccc;
+    background-color: #ddd
+    background-image: linear-gradient(#f1f1f1, #ddd);
+    background-repeat: repeat-x;
+
+button, input, select, textarea
+    outline: none;
+    &:hover, &:focus, &:active
+        outline: none
+button, input, select
+    font-size: .618rem
+    padding: .618em;
+    margin: .618em;
+
+button, .button, select, input
+    border-style:solid
+    border-width: 1px
+    border-color: coolDarker
+    border-radius:3px
+    &:hover
+        border-color: coolDarkest
+
+button, .editor__label
+    background: activeWarm;
+    flex-shrink: 0
+    &:hover, &:focus
+        background: inactiveWarm
+
+button:active
+    mcanimate(saved)        
+
+input, select, textarea
+    background: rgba(255,255,255, 1)
+    &:hover
+        background: rgba(255,255,255,.98)
+    &:focus, &:active
+        background: rgba(255,255,255,1)
+
+        
+
+input, select
+    border-right: 0px
+    border-radius:3px 0px 0px 3px
+    margin-right: 0
+
+input + button, input + .button, select + button, select + .button
+    margin-left: 0
+    border-left: none
+    border-radius: 0 3px 3px 0
+
+textarea
+    font-size: .618rem
+    padding: .4em
+    border-width: 1px
+    border-color: transparent
+    &:hover, &:focus, &:active
+        border-color:transparent
+@media screen and (max-width: 700px)
+    button, input, select
+        font-size: .75em
+
+
+textarea, code
+    font-family: Courier, monospace;
+
+
+.mpGlobal__header
+    smooth()  
+    &__onlineStatus
+        padding: 0 .618em;
+    &__info
+        font-size:.8rem
+        display: inline-block;
+        padding: .2em .6em;
+        background: neutralLight
+        border-radius:50%;
+    &__editor__wrapper
+        smooth() 
+    &__hgroup
+        font-size: 1em;
+        background-color: coolDarkest
+    .editor
+        border-bottom: panelBorder
+        &__label
+            border-top-left-radius: 0
+            border-top-right-radius: 0
+            border-bottom-left-radius: .5em
+            border-bottom-right-radius: .5em
+            cursor: pointer;
+.editor
+    smooth-out()
+    &__toggle
+        visibility:hidden
+        position: fixed
+        left: -9999em
+    &__label
+        padding: .25em;
+        border: 1px solid #e1e1e1;
+        border-top-right-radius: .25em
+        border-top-left-radius: .25em
+        margin:0;
+        cursor: pointer;
+        smooth()    
+    &__control
+        display:none;
+    &__input
+        &--name
+            smooth()
+
+.fieldset
+    smooth()
+    border-right: 4px solid;
+    &:last-child
+        border-right: none;
+    &__label
+        text-align: right
+        color: coolDarker;
+        font-size: .7rem;
+        padding: .618em;
+        background-color: rgba(120,120,120,.05);
+        border-bottom-left-radius: 4px;
+        smooth() 
+        &:hover
+            color: coolDarkest
+            smooth()
+        &.js-shrunk
+            position: relative
+            color: coolDark
+            &:hover, &:focus, &:active
+                color: coolDarkest
+    &__wrapper
+        smooth()
+    &__inputWrapper
+        smooth()
+        overflow-y: scroll
+        .fieldset__field
+            smooth()
+    &--externalLibs
+        .fieldset
+            &__field
+                visibility:visible
+            &__label
+                color: coolDark
+                margin: .5em .5em .5em .5em;
+                background: rgba(255,255,255,.75)
+        .fieldset__field:checked + .fieldset__label
+            color: coolDarkest;
+            background:rgba(255,255,255,.9)
+
+.control
+    visibility: hidden;
+    width: 0%;
+    height: 0;
+
+.fieldsetGroup
+    smooth()
+
+.field
+    &--textarea
+        resize: none
+
+.mpGlobal__footer
+    &__editor
+        border-top: panelBorder
+        background: coolDarkest
+
+.mpModal
+    display:none
+    position:fixed
+    z-index: 1100
+    top: 19.1%
+    left: 30.9%
+    padding: .618em
+
+    background: #fefefe
+    border-radius: .25em
+    smooth-out()
+    &__title
+        color: neutralDark
+    &.visible
+        display:block
+        max-height: 61.8%
+        width: 38.2%
+        smooth()
+    &__overlay
+        display:none
+        position: fixed
+        z-index: 1000
+        height: 100%
+        width: 100%
+        background: rgba(0, 0, 0, .7)
+        &.visible
+            display:block
+            order:-1
+    &__content
+        &__title
+            color: neutralDark
+            flex-basis: 100%
+        &--list
+            font-size: .8em
+            display:flex
+            flex-direction: row
+            justify-content:space-between
+            flex-wrap: wrap
+        small
+            text-align: center
+        input
+            border: none
+.mcsandy
+    &--horizontal
+        .mpGlobal
+            &__header
+                &__editor
+                    border-top: panelBorder
+                    border-bottom: none
+                    &__wrapper
+                        .editor
+                            &__label
+                                align-self:flex-start
+                                transform-origin: .5rem 1rem
+                                transform: rotate(0deg)
+                        &.js-collapsed
+                            .editor
+                                &__label
+                                    transform: rotate(90deg)
+
+            &__footer
+                .editor
+                    &__label
+                        align-self: flex-start
+                        transform-origin: 3rem 2rem
+                        transform:rotate(0deg)
+                &.js-collapsed
+                    .editor
+                        &__label
+                            transform: rotate(-90deg)
+.online
+    color: standardCool;
+.offline
+    color: red;
+.mcsandy--offline
+    .fieldset--externalLibs
+        flex-grow: 0
+        flex-basis: 0%
+        width:0
+        height: 0
+        .fieldset__legend,.fieldset__wrapper
+            display:none
+    .fieldset__userOptions
+            display:none
+    .field--textarea
+        height: 26vh
+.anim-flash
+    mcanimate(saved)
+
+.anim-slideUp
+    mcanimate(slideUp)
+    
+.anim-slideDown
+    mcanimate(slideDown)
+
+
+
+
+
+                

@@ -2,12 +2,23 @@
 	main{
     margin-left: 16% !important;
 }
+	.right-content{
+		margin-left: 16% !important;
+}
+}
+@media (min-width: 1301px) and (max-width: 1509px){
+	.right-content{
+		margin-left: 20% !important;
+	}
 }
 @media (max-width: 1300px) and (min-width: 980px) {
 	body{
 		font-size: 13px !important;
 		min-width: 1000px !important;
 		transition: 0.3s all;
+	}
+	.right-content{
+		margin-left: 20% !important;
 	}
 	.nav-under{
 		font-size: 13px !important;
@@ -19,8 +30,12 @@
 		min-width: 780px !important;
 		transition: 0.3s all;
 	}
+
 	.nav-under{
 		font-size: 8px !important;
+	}
+	.right-content{
+		margin-left: 20% !important;
 	}
 	.left-content{
 		min-width: 135px !important;
@@ -46,5 +61,8 @@
 	}
 	.nav-under{
 		font-size: 8px !important;
+	}
+	.right-content{
+		margin-left: 20% !important;
 	}
 }
