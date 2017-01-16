@@ -1,0 +1,764 @@
+@font-face {
+	font-family: "ProximaNova";
+	src: url("../fonts/ProximaNova-Regular.ttf") format("truetype"),
+	url("../fonts/ProximaNova-Regular.woff") format("woff"),
+	url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal
+}@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansLight"; */
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansItalic"; */
+@font-face {
+    font-family: "OpenSansItalic";
+    src: url("../fonts/OpenSansItalic/OpenSansItalic.eot");
+    src: url("../fonts/OpenSansItalic/OpenSansItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansItalic/OpenSansItalic.woff") format("woff"),
+    url("../fonts/OpenSansItalic/OpenSansItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansBold"; */
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansExtraBold"; */
+@font-face {
+    font-family: "OpenSansExtraBold";
+    src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+    src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+    url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansExtraBoldItalic"; */
+@font-face {
+    font-family: "OpenSansExtraBoldItalic";
+    src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot");
+    src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.woff") format("woff"),
+    url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansBoldItalic"; */
+@font-face {
+    font-family: "OpenSansBoldItalic";
+    src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+    src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"),
+    url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansRegularItalic"; */
+@font-face {
+    font-family: "OpenSansRegularItalic";
+    src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot");
+    src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.woff") format("woff"),
+    url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansSemiBold"; */
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+    src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+    url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansSemiBoldItalic"; */
+@font-face {
+    font-family: "OpenSansSemiBoldItalic";
+    src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot");
+    src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff") format("woff"),
+    url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaBold";
+	src: url("../fonts/ProximaNova-Bold.ttf") format("truetype"),
+	url("../fonts/ProximaNova-Bold.woff") format("woff"),
+	url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal
+}
+@font-face {
+  font-family: "CodePro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CodePro.eot?#iefix") format("embedded-opentype"), url("../fonts/CodePro.woff") format("woff"), url("../fonts/CodePro.ttf") format("truetype"); }
+
+*, *::before, *::after{
+	box-sizing: border-box;
+    transition: 0.3s all;
+}
+img{
+	max-width: 100%;
+	height: 100%;
+
+}
+body{
+	min-width: 1280px;
+	background-color: #fff;
+	font-family: "OpenSansRegular";
+    position: relative;
+}
+header{
+    width: 100%;
+    margin-bottom: 40px;
+}
+main{
+    margin-left: 20%;
+    width: 75%;
+}
+.top-header{
+    display: flex;
+}
+.left-content{
+    font-family: "OpenSansRegular";
+    padding: 29px 10px; 
+    color: #fff;
+    background-color: #4385f4;
+    text-align: center;
+    width: 16%;
+    font-size: 20px;
+    position: fixed;
+    min-width: 180px;
+    max-width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.title{
+    text-align: left;
+    margin-left: 18px;
+}
+.right-content{
+    padding: 30px 20px;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16%;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: 22px;
+}
+.icon-search{
+    color: #4385f4;
+    width: 5%;
+    margin-right: 5px;
+    text-align: center;
+}
+.icon-search i{
+    vertical-align: middle;
+}
+.window-search{
+    display: flex;
+    width: 98%;
+}
+.input-search{
+    margin-left: 10px;
+    width: 60%;
+    border: 1px solid #5c6ab5;
+    display: flex;
+    justify-content: space-between;
+}
+.input-search input{
+    padding: 5px;
+    width: 93%;
+    border: 0;
+    outline: 0;
+}
+.button-search{
+    margin-left: 10px;
+    align-self: center;
+    width: 9%;
+
+}
+.button-search input{
+    width: 100%;
+    background-color: #4385f4;
+    border: 0;
+    color: #fff;
+    padding: 4px;
+    border-radius: 7px;
+    transition: 0.5s all;
+}
+.button-search input:hover{
+    background-color: #3c77db;
+    transition: 0.5s all;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+/*************************************************************************************************/
+.route{
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+}
+
+/*********************  HIDE 1  ****************************/
+
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    padding: 14px 19px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-left:  6px;
+}
+.nav-under{
+    list-style: none;
+    padding: 0;
+}
+.nav-under li{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+.nav-under a {
+    text-decoration: none;
+    transition: 0.3s all;
+    color: #fff;
+}
+.nav-under a:hover{
+    color: #96BBFA
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #fff;
+    
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    padding: 10px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 20px;
+    list-style-type: none;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*********************  HIDE 2  ****************************/
+.hide-2 {
+    display: none; 
+}
+.hide-2 + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide-2 + label {
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-bottom:  1px dashed black;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-right: 6px;
+
+}
+/* вид текста label при активном переключателе */
+.hide-2:checked + label {
+    color: #fe7373;
+    border-bottom: 1px dashed #fe7373;
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide-2:checked + label + div {
+    display: block; 
+    padding: 22px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 30px;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*********************  HIDE 3  ****************************/
+.hide-3 {
+    display: none; 
+}
+.hide-3 + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide-3 + label {
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-bottom:  1px dashed black;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-right: 6px;
+
+}
+/* вид текста label при активном переключателе */
+.hide-3:checked + label {
+    color: #fe7373;
+    border-bottom: 1px dashed #fe7373;
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide-3:checked + label + div {
+    display: block; 
+    padding: 22px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 30px;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*********************  HIDE 4  ****************************/
+.hide-4 {
+    display: none; 
+}
+.hide-4 + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide-4 + label {
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-bottom:  1px dashed black;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-right: 6px;
+
+}
+/* вид текста label при активном переключателе */
+.hide-4:checked + label {
+    color: #fe7373;
+    border-bottom: 1px dashed #fe7373;
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide-4:checked + label + div {
+    display: block; 
+    padding: 22px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 30px;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*********************  HIDE 5  ****************************/
+.hide-5-6 {
+    display: none; 
+}
+.hide-5-6 + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide-5-6 + label {
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-bottom:  1px dashed black;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-right: 6px;
+
+}
+/* вид текста label при активном переключателе */
+.hide-5-6:checked + label {
+    color: #fe7373;
+    border-bottom: 1px dashed #fe7373;
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide-5-6:checked + label + div {
+    display: block; 
+    padding: 22px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 30px;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*********************  HIDE 6  ****************************/
+.hide-6 {
+    display: none; 
+}
+.hide-6 + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide-6 + label {
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-bottom:  1px dashed black;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-right: 6px;
+
+}
+/* вид текста label при активном переключателе */
+.hide-6:checked + label {
+    color: #fe7373;
+    border-bottom: 1px dashed #fe7373;
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide-6:checked + label + div {
+    display: block; 
+    padding: 22px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 30px;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*********************  HIDE 7  ****************************/
+.hide-7 {
+    display: none; 
+}
+.hide-7 + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide-7 + label {
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-bottom:  1px dashed black;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-right: 6px;
+
+}
+/* вид текста label при активном переключателе */
+.hide-7:checked + label {
+    color: #fe7373;
+    border-bottom: 1px dashed #fe7373;
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide-7:checked + label + div {
+    display: block; 
+    padding: 22px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 30px;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*********************  HIDE 8  ****************************/
+.hide-8 {
+    display: none; 
+}
+.hide-8 + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide-8 + label {
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-bottom:  1px dashed black;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-right: 6px;
+
+}
+/* вид текста label при активном переключателе */
+.hide-8:checked + label {
+    color: #fe7373;
+    border-bottom: 1px dashed #fe7373;
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide-8:checked + label + div {
+    display: block; 
+    padding: 22px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 30px;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*********************  HIDE 9  ****************************/
+.hide-9 {
+    display: none; 
+}
+.hide-9 + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide-9 + label {
+    padding: 7px 0;
+    color: black;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-bottom:  1px dashed black;
+
+}
+label:hover{
+    cursor: pointer;
+    color: #96BBFA;
+}
+label i{
+    margin-right: 6px;
+
+}
+/* вид текста label при активном переключателе */
+.hide-9:checked + label {
+    color: #fe7373;
+    border-bottom: 1px dashed #fe7373;
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide-9:checked + label + div {
+    display: block; 
+    padding: 22px;
+    font-size: 14px;
+    font-family: "OpenSansLight";
+    color: #616161;
+    line-height: 30px;
+    -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+/*************************************************************************************************/
