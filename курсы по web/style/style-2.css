@@ -177,9 +177,33 @@ main{
     bottom: 0;
     left: 0;
 }
+.name-course ul{
+    font-size: 14px;
+    list-style: none
+}
+.name-course li{
+    text-align: left;
+    margin-bottom: 3px;
+}
+.name-course li::before{
+    content: "+ ";
+    font-size: 13px;
+}
+.name-course a{
+    text-decoration: none;
+    color: #fff;
+}
+.name-course a:hover{
+    color: #96BBFA;
+}
 .title{
     text-align: left;
     margin-left: 18px;
+}
+
+.title a{
+    text-decoration: none;
+    color: #fff;
 }
 .right-content{
     padding: 30px 0;
@@ -253,21 +277,69 @@ main{
     margin-left: 1%;
 }
 
+.left-main-content-html{
+    width: 49%;
+}
+.left-main-content-html a{
+    text-decoration: none;
+    color: #000;
+}
 
+.main-content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ 
+}
 
+.main-content-left{
+    width: 49%;
+}
+.main-content-left a{
+    text-decoration: none;
+    color: #000;
+}
+.main-content-right{
+    width: 49%;
+}
+.main-content-right a{
+    text-decoration: none;
+    color: #000;
+}
+.shod{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+.shod-2{
+    margin: 0 auto;
 
+}
+.shod:hover{
+    color: #fff;
+    background: linear-gradient(to top right, #006280 10%, rgba(134, 20, 237, 0.58) 30%, rgba(0, 162, 255, 0.78) 50%, rgba(0, 121, 247, 0.81) 75%);
+    transform: scale(1.1);
+}
+.shod-3{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    height: 400px;
+    align-items: center;  
+}
+.shod-3:hover{
+     color: #fff;
+    background: linear-gradient(to top right, #006280 10%, rgba(134, 20, 237, 0.58) 30%, rgba(0, 162, 255, 0.78) 50%, rgba(0, 121, 247, 0.81) 75%);
+    transform: scale(1.1);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.active{
+    color: rgba(9, 255, 246, 0.88) !important;
+ }
 
 /*************************************************************************************************/
 .route{
@@ -290,7 +362,7 @@ main{
     color: #fff;
     text-decoration: none;
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0;
     font-family: "OpenSansRegular";
     font-size: 14px;

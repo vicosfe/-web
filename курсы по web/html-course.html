@@ -11,77 +11,37 @@
 </head>
 <body>
 	<header>
+		<a name="top"></a>
 	<div class="top-header">
 		<div class="left-content">
 			<div class="title">
-				Курсы 
+				<a href="main.html">Курсы </a>
 			</div>
+			<div class="name-course">
+				<ul>
+					<li><a class="nav-under active" href="#">HTML5</a></li>
+					<li><a class="nav-under" href="#">CSS3</a></li>
+					<li><a class="nav-under" href="#">JS</a></li>
+					<li><a class="nav-under" href="#">PHP</a></li>
+				</ul>						
+			</div>
+
 
 			<div class="route">
-					<input type="checkbox" id="hd-1" class="hide">
-				    <label for="hd-1" >HTML 5</label>
+					<input  type="checkbox" id="hd" class="hide">
+				    <label  for="hd" >Тесты</label>
 				    	<div>
-					      	<ul class="nav-under">
-					      		<li><a href="#">+ Вступление.</a></li>
-					      		<li><a href="#">+ Начало.</a></li>
-					      		<li><a href="#">+ Основное.</a></li>
-					      		<li><a href="#">+ ...</a></li>
-					      		<li><a href="#">+ Заключение.</a></li>
-					      		<li><a href="#">+ Тест.</a></li>
-					      	</ul>
-				    	</div>
 
-			</div>
-
-				<div class="route">
-					<input type="checkbox" id="hd-2" class="hide">
-				    <label for="hd-2" >CSS 3</label>
-				    	<div>
 				      	<ul class="nav-under">
-					      		<li><a href="#">+ Вступление.</a></li>
-					      		<li><a href="#">+ Начало.</a></li>
-					      		<li><a href="#">+ Основное.</a></li>
-					      		<li><a href="#">+ ...</a></li>
-					      		<li><a href="#">+ Заключение.</a></li>
-					      		<li><a href="#">+ Тест.</a></li>
-					      	</ul>
-				    	</div>
-
-			</div>
-			
-			<div class="route">
-					<input type="checkbox" id="hd-3" class="hide">
-				    <label for="hd-3" >Java Script</label>
-				    	<div>
-				      	<ul class="nav-under">
-					      		<li><a href="#">+ Вступление.</a></li>
-					      		<li><a href="#">+ Начало.</a></li>
-					      		<li><a href="#">+ Основное.</a></li>
-					      		<li><a href="#">+ ...</a></li>
-					      		<li><a href="#">+ Заключение.</a></li>
-					      		<li><a href="#">+ Тест.</a></li>
+					      		<li><a href="#">+ Тесты по HTML5</a></li>
+					      		<li><a href="#">+ Тесты по CSS3</a></li>
+					      		<li><a href="#">+ Тесты по JS</a></li>
+					      		<li><a href="#">+ Тесты по PHP</a></li>
 					      	</ul>
 				    	</div>
 
 			</div>
 
-			<div class="route">
-					<input type="checkbox" id="hd-4" class="hide">
-				    <label for="hd-4" >PHP</label>
-				    	<div>
-				      	<ul class="nav-under">
-					      		<li><a href="#">+ Вступление.</a></li>
-					      		<li><a href="#">+ Начало.</a></li>
-					      		<li><a href="#">+ Основное.</a></li>
-					      		<li><a href="#">+ ...</a></li>
-					      		<li><a href="#">+ Заключение.</a></li>
-					      		<li><a href="#">+ Тест.</a></li>
-					      	</ul>
-				    	</div>
-
-			</div>
-
-			
 
 		</div>
 		<div class="right-content">
@@ -102,7 +62,7 @@
 	<main>
 
 <!--***************************************************-->	
-	<div class="left-main-content">
+	<div class="left-main-content-html">
 		<a href="#">
 			<div class="content">
 				<div class="text">
@@ -204,11 +164,19 @@
 
 	</div>
 
-
 <!--***************************************************-->	
 	</main>
 <div class="up">
 	<a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
 </div>
+
+<script type="text/javascript">
+(function($){
+   $(document).on('click', 'a[href^=#]', function () {
+        $('html, body').animate({ scrollTop:  $('a[name="'+this.hash.slice(1)+'"]').offset().top }, 2000 ); 
+        return false;
+    });
+})(jQuery);
+</script>
 </body>
 </html>
