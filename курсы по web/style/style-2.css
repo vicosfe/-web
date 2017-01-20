@@ -320,7 +320,7 @@ main{
 }
 .shod:hover{
     color: #fff;
-    background: linear-gradient(to top right, #006280 10%, rgba(134, 20, 237, 0.58) 30%, rgba(0, 162, 255, 0.78) 50%, rgba(0, 121, 247, 0.81) 75%);
+    background: linear-gradient(to top, #4385f4,#43f4f2);
     transform: scale(1.1);
 }
 .shod-3{
@@ -333,7 +333,7 @@ main{
 }
 .shod-3:hover{
      color: #fff;
-    background: linear-gradient(to top right, #006280 10%, rgba(134, 20, 237, 0.58) 30%, rgba(0, 162, 255, 0.78) 50%, rgba(0, 121, 247, 0.81) 75%);
+    background: linear-gradient(to top, #4385f4,#43f4f2);
     transform: scale(1.1);
 }
 
