@@ -1,0 +1,116 @@
+
+h1{
+  font-weight: normal;
+  text-shadow: 1px 1px 4px #111;
+  margin: 50px 0;
+}
+
+.round1, .round1:before, .round1:after{
+  border: 3px solid transparent;
+  border-radius: 50%;
+}
+
+.round1{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-top-color: #bac900;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+  z-index: 8;
+}
+
+.round1:before, .round1:after{
+  content: '';
+  position: absolute;
+}
+
+.round1:before{
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top-color: #00abd4;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+.round1:after{
+  top: 23px;
+  left: 23px;
+  right: 23px;
+  bottom: 23px;
+  border-top-color: #ff1400;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 3s infinite linear;
+}
+
+.anti:after{
+  -webkit-animation: antispin .3s infinite linear;
+  animation: antispin .3s infinite linear;
+  top: 43px;
+  left: 43px;
+  right: 43px;
+  bottom: 43px;
+  border-bottom-color: #ff1400;
+}
+
+@-webkit-keyframes spin {
+  from { 
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from { 
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes antispin {
+  from { 
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes antispin {
+  from { 
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.clearfix:before, .clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}

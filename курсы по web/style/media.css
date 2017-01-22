@@ -59,6 +59,14 @@
     font-size: 25px !important;
     height: 220px !important;
 }
+.img-select>img{
+	max-width: 35% !important;
+	min-width: 30% !important; 
+}
+.preloader{
+    top: 43% !important;
+    left: 43% !important;
+}
 }
 @media (max-width: 980px) and ( min-width: 801px ){
 	body{
@@ -92,6 +100,14 @@
 .shod-3{
     font-size: 20px !important;
     height: 180px !important;
+}
+.img-select>img{
+	max-width: 35% !important;
+	min-width: 30% !important; 
+}
+.preloader{
+    top: 45% !important;
+    left: 45% !important;
 }
 }
 
@@ -127,5 +143,13 @@
 .shod{
     font-size: 18px !important;
     height: 120px !important;
+}
+.img-select>img{
+	max-width: 33% !important;
+	min-width: 29% !important; 
+}
+.preloader{
+    top: 40% !important;
+    left: 40% !important;
 }
 }

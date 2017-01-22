@@ -131,8 +131,21 @@ body{
 	min-width: 1280px;
 	background-color: #fff;
 	font-family: "OpenSansRegular";
-    position: relative;
     background-color: #f8f8f8;
+}
+.load  {
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+}
+.preloader{
+    position: absolute;
+    top: 45%;
+    left: 45%;
 }
 .up{
     position: fixed;
@@ -340,6 +353,86 @@ main{
 .active{
     color: rgba(9, 255, 246, 0.88) !important;
  }
+.main-shod{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.main-shod:hover>.img-select{
+}
+.section-main-page{
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+.section-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    height: 100%;
+}
+.select-course{
+    width: 25%;
+    align-self: center;
+    height: 100%;
+}
+.main-content-1{
+    background: url(../img/bg-1.png);
+    height: 100%;
+    background-position: 20%;
+    display: flex;
+}
+.main-content-1:hover{
+    background: url(../img/bg-1-hov.png);
+    background-position: 18%;
+}
+.main-content-2{
+    background: url(../img/bg-2.png);
+    height: 100%;
+    background-position: 20%;
+    display: flex;
+}
+.main-content-2:hover{
+    background: url(../img/bg-2-hov.png);
+    background-position: 18%;
+}
+.main-content-3{
+    background: url(../img/bg-3.png);
+    height: 100%;
+    background-position: 20%;
+    display: flex;
+
+}
+.main-content-3:hover{
+    background: url(../img/bg-3-hov.png);
+    background-position: 18%;
+}
+.main-content-4{
+    background: url(../img/bg-4.png);
+    height: 100%;
+    background-position: 20%;
+    display: flex;
+}
+.main-content-4:hover{
+    background: url(../img/bg-4-hov.png);
+    background-position: 18%;
+}
+.img-select{
+    margin: 0 auto;
+    align-self: center;
+}
+.img-select img{
+    max-width: 45%;
+}  
+
+.select-course:hover img{
+    transform: scale(1.5);
+}
+
 
 /*************************************************************************************************/
 .route{
