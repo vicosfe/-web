@@ -7,15 +7,18 @@
 	<link rel="stylesheet" href="style/style-preload.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
-	<!-- <script src="js/js.js" type="text/javascript"></script> -->
-	<script src="js/preloader.js"></script>
+	 <script src="js/js.js" type="text/javascript"></script> 
 	<meta charset="UTF-8">
 	<title>Главная</title>
 </head>
 <body>
 	<div class="load">
 		<div class="preloader">
-			<div class="round1"></div>
+			<!-- <div class="round1"></div> -->
+			<div class="loader-inner cube-transition">
+	          <div></div>
+	          <div></div>
+	        </div>
 		</div>
 		
 	</div>
@@ -68,12 +71,11 @@
 <!--***************************************************-->
 
 <!--***************************************************-->	
-	</section>
-
+	</section>	
 <script type="text/javascript">
 		window.onload = function() {
 				$(".load").delay(800).fadeOut(300);
 		}
-</script>
+</script>	
 </body>
 </html>

@@ -140,12 +140,12 @@ body{
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #000;
+    background-color: #0a1017;
 }
 .preloader{
     position: absolute;
-    top: 45%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
 }
 .up{
     position: fixed;
@@ -288,6 +288,11 @@ main{
 .img{
     width: 19%;
     margin-left: 1%;
+    text-align: center;
+    align-self: center;
+}
+.img img{
+    max-width: 70%;
 }
 
 .left-main-content-html{
@@ -389,6 +394,9 @@ left: 0;
 .main-content-1:hover{
     background: url(../img/bg-1-hov.png);
     background-position: 18%;
+    z-index: 200;
+    filter: blur(100%);
+
 }
 .main-content-2{
     background: url(../img/bg-2.png);
